@@ -32,7 +32,10 @@ namespace BT.Ex.Movement {
 
 		public override void Clear () {
 			base.Clear ();
-			Execute();
+
+			if (_executeWhenClear) {
+				Execute();
+			}
 		}
 	}
 
