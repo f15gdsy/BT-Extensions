@@ -50,6 +50,7 @@ namespace BT.Ex.Movement {
 				}
 			}
 			else if (_moveDirection == GeneralDirection.Both) {
+				direction.Normalize();
 				position.x += speed * direction.x * Time.deltaTime;
 				position.y += speed * direction.y * Time.deltaTime;
 			}
